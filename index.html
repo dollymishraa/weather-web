@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <h1>Dolly's view</h1>
+
+      <div class="search-box">
+        <input id="search" type="search" placeholder="Search field" autocomplete="off" aria-label="Search city or state">
+        <ul id="search-results" class="search-results" hidden></ul>
+      </div>
+
+      <div class="controls">
+        <select id="state" aria-label="State"></select>
+        <select id="city" aria-label="City"></select>
+        <button id="refresh" type="button">Get weather</button>
+      </div>
+    </header>
+
+    <div id="output" class="card message">Select a state and city.</div>
+
+    
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
